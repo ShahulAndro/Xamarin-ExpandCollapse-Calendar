@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpandCollapseAnimationWithCalendar.MainPage"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.UI.Views;assembly=Xamarin.CommunityToolkit"
+             xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
+             Title="Calendar Expander">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                            <Style.Triggers>
+                    <Trigger TargetType="Entry"
+                             Property="IsFocused" Value="True">
+                        <Setter Property="BackgroundColor" Value="Yellow" />
+                        <!-- multiple Setters elements are allowed -->
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Margin="20,60,20,20">
+        <Entry Placeholder="enter name">
+                        <!--<Entry.Triggers>
+                            <Trigger TargetType="Entry"
+                                     Property="IsFocused" Value="True">
+                                <Setter Property="BackgroundColor" Value="Yellow" />
+                                 multiple Setters elements are allowed 
+                            </Trigger>
+                        </Entry.Triggers>-->
+         </Entry>
+        <xct:Expander Tapped="OnExpanderTapped">
+            <xct:Expander.Header
+                ExpandAnimationLength = "100">
+                 <Grid>
+                    <Label Text="Show/Hide calendar"
+                           FontAttributes="Bold"
+                           FontSize="Medium" />
+                    <Image Source="expand.png"
+                                           HorizontalOptions="End"
+                                           VerticalOptions="Start">
+                        <Image.Triggers>
+                               <DataTrigger TargetType="Image"
+                                                     Binding="{Binding Source={RelativeSource AncestorType={x:Type xct:Expander}}, Path=IsExpanded}"
+                                                     Value="True">
+                                    <Setter Property="Source"
+                                                    Value="collapse.png" />
+                                </DataTrigger>
+                        </Image.Triggers>
+                    </Image>
+
+                 </Grid>
+            </xct:Expander.Header>
+            <controls:Calendar Padding="10,10,10,0" 
+                           SelectedBorderWidth="4" 
+                           DisabledBorderColor="Black"
+                           ShowNumberOfWeek="false"
+                           StartDay="Monday"
+                           TitleLabelTextColor="Purple"
+                           TitleLeftArrowTextColor="Blue"
+                           SelectedDate="{Binding Date}"
+                           SpecialDates="{Binding Attendances}"
+                           DateCommand="{Binding DateChosen}"/>
+        </xct:Expander>
+    </StackLayout>
+
+</ContentPage>

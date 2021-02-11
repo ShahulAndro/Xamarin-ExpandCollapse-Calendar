@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{2B9C8200-B17E-4F43-9B39-8CD642C8625A}|Default">
+  <MonoDevelop.Ide.ItemProperties.ExpandCollapseAnimationWithCalendar.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4379953F-EB58-4D5F-B9B9-E3819A5DE014" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExpandCollapseAnimationWithCalendar/App.xaml.cs">
+    <Files>
+      <File FileName="ExpandCollapseAnimationWithCalendar/MainPage.xaml" Line="50" Column="29" />
+      <File FileName="ExpandCollapseAnimationWithCalendar/MainPage.xaml.cs" />
+      <File FileName="ExpandCollapseAnimationWithCalendar/App.xaml.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ExpandCollapseAnimationWithCalendar" expanded="True">
+            <Node name="ExpandCollapseAnimationWithCalendar" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="SdkDependencies" expanded="True">
+                  <Node name="NETStandard.Library" selected="True" />
+                </Node>
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+            <Node name="ExpandCollapseAnimationWithCalendar.Android" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
+            <Node name="ExpandCollapseAnimationWithCalendar.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ExpandCollapseAnimationWithCalendar.Android TriggeredFromHotReload="False" PreferredExecutionTarget="Android.pixel_2_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
