@@ -10,6 +10,6 @@ Expander control from Xamarin.CommunityToolkit uses for expand and collapse ani
 Calendar plugin i used XamarinForms.Controls.Calendar nuget package, you can use any custom calendar control or any control for expand/collapse animation.
 
 
-Android demo                                                   |  iOS demo
-:-------------------------------------------------------------:|:-----------------------------------------:
-<img src="/gif/expand_collapse_calendar_android.mp4"/>         |  <img src="/gif/expand_collapse_calendar_ios.mp4"/>
+Android demo                                         |  iOS demo
+:---------------------------------------------------:|:-----------------------------------------:
+![](gif/expand_collapse_calendar_android.gif)        |  ![](gif/expand_collapse_calendar_ios.gif)
